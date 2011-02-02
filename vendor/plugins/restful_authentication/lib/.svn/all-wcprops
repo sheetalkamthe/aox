@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/lib
+END
+authentication.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/lib/authentication.rb
+END
+authorization.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/lib/authorization.rb
+END
+trustification.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/lib/trustification.rb
+END

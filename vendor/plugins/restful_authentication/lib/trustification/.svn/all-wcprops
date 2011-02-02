@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/lib/trustification
+END
+email_validation.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/lib/trustification/email_validation.rb
+END

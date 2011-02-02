@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/test
+END
+unit_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/test/unit_test.rb
+END
+functional_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/test/functional_test.rb
+END
+model_functional_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/test/model_functional_test.rb
+END
+mailer_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/test/mailer_test.rb
+END

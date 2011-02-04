@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  # Be sure to include AuthenticationSystem in Application Controller instead
+  # Be sure to include AuthenticationSystem in Application Controller insteaddddd
   include AuthenticatedSystem
   #
   # Protect these actions behind an admin login

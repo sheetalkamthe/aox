@@ -1,0 +1,13 @@
+development:
+  adapter: mysql
+  database: test
+  username : root
+  password : root
+  host : 127.0.0.1
+
+production:
+  adapter: mysql
+  database: test
+  username : root
+  password : root
+  host : 127.0.0.1

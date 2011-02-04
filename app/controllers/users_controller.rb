@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  # Be sure to include AuthenticationSystem in Application Controller insteaddddd
+  # Be sure to include AuthenticationSystem in Application Controller instead
   include AuthenticatedSystem
   #
   # Protect these actions behind an admin login
@@ -18,6 +18,9 @@ class UsersController < ApplicationController
     @user.register! if @user && @user.valid?
     success = @user && @user.valid?
     if success && @user.errors.empty?
+      @user.save
+      @user.activate!
+      UserMailer.deliver_signup_notification(@user)
       redirect_back_or_default('/')
       flash[:notice] = "Thanks for signing up!  We're sending you an email with your activation code."
     else
@@ -67,7 +70,7 @@ class UsersController < ApplicationController
   # smart -- make sure you check that the visitor is authorized to do so, that they
   # supply their old password along with a new one to update it, etc.
 
-protected
+  protected
   def find_user
     @user = User.find(params[:id])
   end

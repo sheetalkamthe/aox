@@ -1,0 +1,362 @@
+/*
+    Document   : admin_ff
+    Created on : Dec 13, 2010, 6:12:11 PM
+    Author     : surabhi_sahay
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+body {
+    background: transparent url(/images/blue_background.jpg) repeat;
+    color: #4F4F4F;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word ;
+}
+
+a , a:visited {
+    color: #0065CC;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:active, a:hover {
+    color: #914A12;
+    outline: 0;
+}
+
+table {margin-top: 15px;}
+th { background: #FFD96A;color:#444444;  padding-left: 5px;padding-right: 5px;}
+td
+{
+    color: #444444;
+    font-family: verdana;
+    font-size: 85%;
+    line-height: 180%;
+    background-color: #D9E6EF;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+    padding: 5px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #181818;
+}
+
+h1 {    font-size: 2em;}
+
+h2 {    font-size: 1.8em;}
+
+h3 {    font-size: 1.6em;}
+
+h4 {    font-size: 1em;}
+
+p, ul, ol {
+    margin-top: 0;
+    line-height: 180%;
+}
+
+ul, li {list-style-image:none;
+        list-style-position:outside;
+        list-style-type:none;}
+
+img {border: none;}
+
+.left{float:left;}
+.right{float:right;}
+
+#container {
+    background: #fff;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#header {
+    background: #7FA0FF url(/images/NaayaLogo.jpg) no-repeat;
+    height: 102px;
+    padding: 0 10px 0 20px;
+}
+
+
+#header h1 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+#mainContent {
+    background: #FFFFFF;
+    padding: 0;
+    width: 100%;
+    min-height:  500px;
+}
+
+#mainContent #navigation {
+    float: left;
+    min-height:  500px;
+    padding: 5px;
+    width: 180px;
+}
+#mainContent #navigation h3, #mainContent #navigation p {
+    margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+    margin-right: 10px;
+}
+
+#mainContent #adminContents {
+    border-left: 2px solid #AEC1EB;
+    float: right;
+    min-height: 500px;
+    padding: 5px;
+    width: 797px;
+}
+
+#footer {
+    background: #7FA0FF;
+    color: #424242;
+    clear:both;
+    font:Verdana, Geneva, sans-serif;
+    font-size:11px;
+    height: 60px;
+    padding: 0 10px;
+}
+
+#footer #innerContent {
+    margin: 0;
+    padding: 22px 0;
+    text-align: center;
+
+}
+
+/* styles for header*/
+#headerLinks{ float: right; margin-right: 90px; margin-top:80px; color: white; font-weight: bold}
+#headerLinks a {color: white; font-weight: bold}
+
+/* Styles for one column form*/
+.loginForm ul { width: 400px;}
+.loginForm li {display:inline; float:left; width: 180px ;padding: 2px;}
+.oneColForm ul { width: 350px;line-height:175%;}
+.oneColForm li {display:inline; float:left; width: 150px ;padding: 2px;}
+.oneColForm .help{color:gray;font-size:12px;font-style:italic;font-weight:bold;padding-left:154px;width:472px;}
+.actions{
+    float:left;
+    margin-left:-75px;
+    margin-top:25px;
+    padding:10px;}
+.button{
+    background:transparent url(/images/button.png) repeat-x scroll left top;
+    border:0 none;
+    color:#FFFFFF;
+    font-weight:bold;
+    height:22px;
+    margin-left:2px;
+    padding-bottom:3px;
+    padding-top:1px;
+    vertical-align:top;
+    width:auto;
+}
+.backLink{
+    float:right;
+    font-weight:bold;
+    margin-right:45px;
+    margin-top:-20px;
+}
+
+#loginButton{
+    float:left;
+    margin-left:-187px;
+    margin-top:35px;
+    padding:3px;
+}
+
+#loginButton a{font-size: 12px;}
+
+/* scaffold css*/
+.field_with_errors {
+    padding: 2px;
+    background-color: red;
+    display: table;
+}
+
+#error_explanation {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+}
+
+#error_explanation ul li {
+    font-size: 12px;
+    list-style: square;
+}
+.digg_pagination {
+    background: white;
+    /* self-clearing method: */ }
+.digg_pagination a, .digg_pagination span {
+    padding: .2em .5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+.digg_pagination span.disabled {
+    color: #999;
+    border: 1px solid #DDD; }
+.digg_pagination span.current {
+    font-weight: bold;
+    background: #2E6AB1;
+    color: white;
+    border: 1px solid #2E6AB1; }
+.digg_pagination a {
+    text-decoration: none;
+    color: #105CB6;
+    border: 1px solid #9AAFE5; }
+.digg_pagination a:hover, .digg_pagination a:focus {
+    color: #003;
+    border-color: #003; }
+.digg_pagination .page_info {
+    background: #2E6AB1;
+    color: white;
+    padding: .4em .6em;
+    width: 22em;
+    margin-bottom: .3em;
+    text-align: center; }
+.digg_pagination .page_info b {
+    color: #003;
+    background: #6aa6ed;
+    padding: .1em .25em; }
+.digg_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+* html .digg_pagination {
+    height: 1%; }
+*:first-child+html .digg_pagination {
+    overflow: hidden; }
+
+#roleUpdater{color:white; float:right;margin-right: -355px; font-weight: bold;}
+
+.red {color: red}
+
+/* Added for kid friends list page......start..........*/
+div.filter {
+    border: 1px solid silver;
+    margin: 10px;
+    padding: 7px;
+    width: 300px
+}
+
+div.friendsList
+{
+    margin:2px;
+    height:auto;
+    width:auto;
+    float:left;
+    text-align:center;
+}
+div.friendsList img
+{
+    display:inline;
+    margin:3px;
+    border:1px solid #ffffff;
+}
+div.desc
+{
+    text-align:center;
+    font-weight:normal;
+    width:120px;
+    margin:2px;
+}
+
+/* kid friends list page......end..........*/
+
+.title { color: #4FD1DE;font-size: 16px;font-weight: bold;padding-top: 5px;}
+.blankPrompt{font-size: 12px;color:#0065CC;padding-top: 5px;font-style: italic;padding-left: 10px;}
+
+/* Styles for breadcrumbs */
+.breadcrumb{
+    font: normal 12px Verdana, Helvetica, sans-serif;
+    padding-left: 10px;padding-bottom:2px;
+    height:17px;
+    margin-bottom:20px;
+    background:transparent url(/images/breadcrumbbg.png) no-repeat center left;
+    padding-top:5px;
+    width:765px;
+}
+
+.breadcrumb a{
+    background: transparent url(/images/breadcrumb.gif) no-repeat center right;
+    text-decoration: none;
+    padding-right: 15px; adjust bullet image padding
+}
+
+.breadcrumb a:hover{
+    text-decoration: underline;
+}
+/* Styles for breadcrumbs end */
+
+/*Flash messages */
+p.notice,
+p.warning,
+p.error {
+    background: none repeat scroll 0 0 #EFD468;
+    color: #BF542F;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10%;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0.5% 1.4%;
+    position: absolute;
+    width: 97.2%;
+    z-index: 1000;
+
+}
+
+p.notice span {
+    width: 20px;
+    height:20px;
+    background: url(/images/check.png) no-repeat left top;
+}
+p.warning span {
+    background: url(/images/warning.png) no-repeat left top;
+}
+p.error span {
+    width: 20px;
+    height:20px;
+    background: url(/images/error.png) no-repeat left top;
+}
+
+p.notice span,
+p.warning span,
+p.error span {
+    float: left;
+    width: 4.2%;
+    height: 32px;
+    margin-top: -0.4%;
+    color: white;
+}
+/*Flash messages end*/

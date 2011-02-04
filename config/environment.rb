@@ -38,4 +38,21 @@ Rails::Initializer.run do |config|
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
+
+
 end
+
+require 'tlsmail'
+ActionMailer::Base.default_content_type = "text/html"
+Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
+ActionMailer::Base.delivery_method = :test
+ActionMailer::Base.perform_deliveries = true
+ActionMailer::Base.raise_delivery_errors = true
+
+ActionMailer::Base.smtp_settings = {
+  :port => 25,
+  :domain => 'persistent.co.in',
+  :address => "10.77.224.53",
+  :authentication => :login,
+  :user_name => "roshan_devadiga",
+  :password => "my_passw0rd"}

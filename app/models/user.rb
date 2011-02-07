@@ -25,9 +25,7 @@ class User < ActiveRecord::Base
   attr_accessor :email_confirmation
 
   def email_confirms
-    unless email == email_confirmation
-      errors.add('Email and email confirmation')
-    end
+    errors.add('Email and Email confirmation') unless email == email_confirmation
   end
   
   def name

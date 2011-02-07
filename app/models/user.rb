@@ -26,7 +26,7 @@ class User < ActiveRecord::Base
 
   def email_confirms
     unless email == email_confirmation
-      errors.add('Email and email confirmation are not same')
+      errors.add('Email and email confirmation')
     end
   end
   

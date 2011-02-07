@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
-V 114
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/features
+V 107
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/features
 END
 sessions.feature
 K 25
 svn:wc:ra_dav:version-url
-V 131
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/features/sessions.feature
+V 124
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/features/sessions.feature
 END
 accounts.feature
 K 25
 svn:wc:ra_dav:version-url
-V 131
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/features/accounts.feature
+V 124
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/features/accounts.feature
 END

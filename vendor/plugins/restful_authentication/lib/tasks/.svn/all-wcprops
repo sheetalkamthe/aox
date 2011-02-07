@@ -1,11 +1,11 @@
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/lib/tasks
+V 73
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/lib/tasks
 END
 auth.rake
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/lib/tasks/auth.rake
+V 83
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/lib/tasks/auth.rake
 END

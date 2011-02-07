@@ -1,11 +1,11 @@
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/rails
+V 69
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/rails
 END
 init.rb
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/rails/init.rb
+V 77
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/rails/init.rb
 END

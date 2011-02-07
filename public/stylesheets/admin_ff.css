@@ -188,7 +188,7 @@ img {border: none;}
     display: table;
 }
 
-#error_explanation {
+#errorExplanation {
     width: 450px;
     border: 2px solid red;
     padding: 7px;
@@ -197,7 +197,7 @@ img {border: none;}
     background-color: #f0f0f0;
 }
 
-#error_explanation h2 {
+#errorExplanation h2 {
     text-align: left;
     font-weight: bold;
     padding: 5px 5px 5px 15px;
@@ -208,7 +208,7 @@ img {border: none;}
     color: #fff;
 }
 
-#error_explanation ul li {
+#errorExplanation ul li {
     font-size: 12px;
     list-style: square;
 }
@@ -362,7 +362,7 @@ p.error span {
 /*Flash messages end*/
 
 
-#signup
+#signup, #loggin_page
 {
     float: left;
     margin-left: 0.0%;

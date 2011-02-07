@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(:version => 20110202134256) do
     t.string   "company_url"
     t.string   "industry"
     t.string   "state",                                    :default => "passive"
-    t.string   "string",                                   :default => "passive"
     t.string   "activation_code"
     t.string   "remember_token",            :limit => 40
     t.datetime "remember_token_expires_at"

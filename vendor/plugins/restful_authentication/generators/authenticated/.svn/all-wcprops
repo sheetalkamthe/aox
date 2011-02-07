@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
-V 95
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated
+V 88
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated
 END
 USAGE
 K 25
 svn:wc:ra_dav:version-url
-V 101
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/USAGE
+V 94
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/USAGE
 END
 authenticated_generator.rb
 K 25
 svn:wc:ra_dav:version-url
-V 122
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/authenticated_generator.rb
+V 115
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/authenticated_generator.rb
 END

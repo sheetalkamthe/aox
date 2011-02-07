@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/lib/authorization
+V 81
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/lib/authorization
 END
 aasm_roles.rb
 K 25
 svn:wc:ra_dav:version-url
-V 102
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/lib/authorization/aasm_roles.rb
+V 95
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/lib/authorization/aasm_roles.rb
 END
 stateful_roles.rb
 K 25
 svn:wc:ra_dav:version-url
-V 106
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/lib/authorization/stateful_roles.rb
+V 99
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/lib/authorization/stateful_roles.rb
 END

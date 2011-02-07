@@ -1,5 +1,5 @@
 <div id="signup">
-  <h1>Sign up as a new user</h1>
+  <h3>Sign up as a new user</h3>
   <% @user.password = @user.password_confirmation = nil %>
 
   <%= error_messages_for :user %>
@@ -8,16 +8,19 @@
     <p><%= label_tag 'Email' %><br/>
       <%= f.text_field :email %></p>
 
+    <p><%= label_tag 'email_confirmation', 'Email Confirmation' %><br/>
+      <%= f.text_field :email_confirmation %></p>
+
     <p><%= label_tag 'password' %><br/>
       <%= f.password_field :password %></p>
 
     <p><%= label_tag 'password_confirmation', 'Confirm Password' %><br/>
       <%= f.password_field :password_confirmation %></p>
 
-    <p><%= label_tag 'first_name' %><br/>
+    <p><%= label_tag 'first_name', 'First Name' %><br/>
       <%= f.text_field :first_name %></p>
 
-    <p><%= label_tag 'last_name' %><br/>
+    <p><%= label_tag 'last_name', 'Last Name' %><br/>
       <%= f.text_field :last_name %></p>
 
     <p><%= label_tag 'title' %><br/>
@@ -36,9 +39,9 @@
 
 
     <p><%= label_tag 'country' %><br/>
-      <%= f.text_field :country %></p>
+      <%= f.select :country, AppConst::COUNTRIES %></p>
 
-    <p><%= label_tag 'company_url' %><br/>
+    <p><%= label_tag 'company_url', 'Company URL' %><br/>
       <%= f.text_field :company_url %></p>
 
     <p><%= label_tag 'industry' %><br/>

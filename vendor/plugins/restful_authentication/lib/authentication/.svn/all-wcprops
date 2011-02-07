@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
-V 89
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/lib/authentication
+V 82
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/lib/authentication
 END
 by_cookie_token.rb
 K 25
 svn:wc:ra_dav:version-url
-V 108
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/lib/authentication/by_cookie_token.rb
+V 101
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/lib/authentication/by_cookie_token.rb
 END
 by_password.rb
 K 25
 svn:wc:ra_dav:version-url
-V 104
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/lib/authentication/by_password.rb
+V 97
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/lib/authentication/by_password.rb
 END

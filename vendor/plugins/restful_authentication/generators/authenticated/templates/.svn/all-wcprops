@@ -1,107 +1,107 @@
 K 25
 svn:wc:ra_dav:version-url
-V 105
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates
+V 98
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates
 END
 signup.html.erb
 K 25
 svn:wc:ra_dav:version-url
-V 121
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/signup.html.erb
+V 114
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/signup.html.erb
 END
 helper.rb
 K 25
 svn:wc:ra_dav:version-url
-V 115
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/helper.rb
+V 108
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/helper.rb
 END
 login.html.erb
 K 25
 svn:wc:ra_dav:version-url
-V 120
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/login.html.erb
+V 113
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/login.html.erb
 END
 authenticated_test_helper.rb
 K 25
 svn:wc:ra_dav:version-url
-V 134
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/authenticated_test_helper.rb
+V 127
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/authenticated_test_helper.rb
 END
 signup_notification.erb
 K 25
 svn:wc:ra_dav:version-url
-V 129
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/signup_notification.erb
+V 122
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/signup_notification.erb
 END
 controller.rb
 K 25
 svn:wc:ra_dav:version-url
-V 119
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/controller.rb
+V 112
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/controller.rb
 END
 _model_partial.html.erb
 K 25
 svn:wc:ra_dav:version-url
-V 129
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/_model_partial.html.erb
+V 122
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/_model_partial.html.erb
 END
 authenticated_system.rb
 K 25
 svn:wc:ra_dav:version-url
-V 129
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/authenticated_system.rb
+V 122
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/authenticated_system.rb
 END
 observer.rb
 K 25
 svn:wc:ra_dav:version-url
-V 117
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/observer.rb
+V 110
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/observer.rb
 END
 migration.rb
 K 25
 svn:wc:ra_dav:version-url
-V 118
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/migration.rb
+V 111
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/migration.rb
 END
 model_helper.rb
 K 25
 svn:wc:ra_dav:version-url
-V 121
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/model_helper.rb
+V 114
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/model_helper.rb
 END
 site_keys.rb
 K 25
 svn:wc:ra_dav:version-url
-V 118
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/site_keys.rb
+V 111
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/site_keys.rb
 END
 model.rb
 K 25
 svn:wc:ra_dav:version-url
-V 114
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/model.rb
+V 107
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/model.rb
 END
 model_controller.rb
 K 25
 svn:wc:ra_dav:version-url
-V 125
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/model_controller.rb
+V 118
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/model_controller.rb
 END
 activation.erb
 K 25
 svn:wc:ra_dav:version-url
-V 120
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/activation.erb
+V 113
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/activation.erb
 END
 model_helper_spec.rb
 K 25
 svn:wc:ra_dav:version-url
-V 126
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/model_helper_spec.rb
+V 119
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/model_helper_spec.rb
 END
 mailer.rb
 K 25
 svn:wc:ra_dav:version-url
-V 115
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/mailer.rb
+V 108
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/mailer.rb
 END

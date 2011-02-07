@@ -1,14 +1,16 @@
-<h1>Log In</h1>
+<div id ="loggin_page">
+  <h3>Log In</h3>
 
-<% form_tag session_path do -%>
-<p><%= label_tag 'email', 'Email' %><br />
-<%= text_field_tag 'email', @login %></p>
+  <% form_tag session_path do -%>
+    <p><%= label_tag 'email', 'Email' %><br />
+      <%= text_field_tag 'email', @login %></p>
 
-<p><%= label_tag 'password' %><br/>
-<%= password_field_tag 'password', nil %></p>
+    <p><%= label_tag 'password' %><br/>
+      <%= password_field_tag 'password', nil %></p>
 
-<p><%= label_tag 'remember_me', 'Remember me' %>
-<%= check_box_tag 'remember_me', '1', @remember_me %></p>
+    <p><%= label_tag 'remember_me', 'Keep me logged in' %>
+      <%= check_box_tag 'remember_me', '1', @remember_me %></p>
 
-<p><%= submit_tag 'Log in' %>&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'forgot_password', forgot_password_session_path %></p>
-<% end -%>
+    <p><%= submit_tag 'Log in' %>&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'forgot_password', forgot_password_session_path %></p>
+  <% end -%>
+</div>

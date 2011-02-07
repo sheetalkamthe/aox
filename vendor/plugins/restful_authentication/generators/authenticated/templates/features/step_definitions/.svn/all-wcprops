@@ -1,41 +1,41 @@
 K 25
 svn:wc:ra_dav:version-url
-V 131
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/features/step_definitions
+V 124
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/features/step_definitions
 END
 ra_response_steps.rb
 K 25
 svn:wc:ra_dav:version-url
-V 152
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/features/step_definitions/ra_response_steps.rb
+V 145
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/features/step_definitions/ra_response_steps.rb
 END
 ra_navigation_steps.rb
 K 25
 svn:wc:ra_dav:version-url
-V 154
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/features/step_definitions/ra_navigation_steps.rb
+V 147
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/features/step_definitions/ra_navigation_steps.rb
 END
 ra_resource_steps.rb
 K 25
 svn:wc:ra_dav:version-url
-V 152
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/features/step_definitions/ra_resource_steps.rb
+V 145
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/features/step_definitions/ra_resource_steps.rb
 END
 ra_env.rb
 K 25
 svn:wc:ra_dav:version-url
-V 141
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/features/step_definitions/ra_env.rb
+V 134
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/features/step_definitions/ra_env.rb
 END
 rest_auth_features_helper.rb
 K 25
 svn:wc:ra_dav:version-url
-V 160
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/features/step_definitions/rest_auth_features_helper.rb
+V 153
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/features/step_definitions/rest_auth_features_helper.rb
 END
 user_steps.rb
 K 25
 svn:wc:ra_dav:version-url
-V 145
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/features/step_definitions/user_steps.rb
+V 138
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/features/step_definitions/user_steps.rb
 END

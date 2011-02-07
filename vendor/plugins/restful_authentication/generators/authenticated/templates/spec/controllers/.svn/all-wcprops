@@ -1,29 +1,29 @@
 K 25
 svn:wc:ra_dav:version-url
-V 122
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/spec/controllers
+V 115
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/spec/controllers
 END
 users_controller_spec.rb
 K 25
 svn:wc:ra_dav:version-url
-V 147
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/spec/controllers/users_controller_spec.rb
+V 140
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/spec/controllers/users_controller_spec.rb
 END
 authenticated_system_spec.rb
 K 25
 svn:wc:ra_dav:version-url
-V 151
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/spec/controllers/authenticated_system_spec.rb
+V 144
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/spec/controllers/authenticated_system_spec.rb
 END
 sessions_controller_spec.rb
 K 25
 svn:wc:ra_dav:version-url
-V 150
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/spec/controllers/sessions_controller_spec.rb
+V 143
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/spec/controllers/sessions_controller_spec.rb
 END
 access_control_spec.rb
 K 25
 svn:wc:ra_dav:version-url
-V 145
-/empex/!svn/ver/11/branches/lams/vendor/plugins/restful_authentication/generators/authenticated/templates/spec/controllers/access_control_spec.rb
+V 138
+/AlwaysOnX/!svn/ver/2/aox/vendor/plugins/restful_authentication/generators/authenticated/templates/spec/controllers/access_control_spec.rb
 END

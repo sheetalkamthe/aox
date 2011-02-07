@@ -1,5 +1,6 @@
-source :gemcutter
-gem "rails", "~> 2.3.5"
+source 'http://rubygems.org'
+
+gem "rails", "2.3.5"
 
 # bundler requires these gems in all environments
 gem "mysql", '2.8.1'

@@ -360,3 +360,10 @@ p.error span {
     color: white;
 }
 /*Flash messages end*/
+
+
+#signup
+{
+    float: left;
+    margin-left: 0.0%;
+}

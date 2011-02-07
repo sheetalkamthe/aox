@@ -18,7 +18,7 @@
         <% end %>
       </div><!-- end #header -->
       <div id="mainContent">
-        <div id="navigation">
+        <div id="navigation" style="min-height: 0px">
           <% unless current_user %>
             <%= link_to 'Login', :controller => 'sessions', :action => 'new' %><br/>
             <%= link_to 'Signup', :controller => 'users', :action => 'new' %>

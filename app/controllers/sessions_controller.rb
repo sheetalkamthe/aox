@@ -73,12 +73,12 @@ class SessionsController < ApplicationController
   # * None
   def change_password
     if request.post?
-      login, password = params[:login], params[:password]
+      email, password = params[:email], params[:password]
       confirmation = params[:password_confirmation]
-      if login.blank?
-        user = User.authenticate(current_user.login, params[:old_password])
+      if email.blank?
+        user = User.authenticate(current_user.email, params[:old_password])
       else
-        user = User.authenticate(login, params[:old_password])
+        user = User.authenticate(email, params[:old_password])
       end
       if user && check_password_and_confirmation(password, confirmation)
         user.update_attributes(:password => password, :password_confirmation => confirmation)
@@ -86,7 +86,7 @@ class SessionsController < ApplicationController
         redirect_to '/'
       else
         flash[:notice] = "Wrong password or Password doesn't match with confirmation"
-        redirect_to change_password_session_path({:login => login}) unless login.blank?
+        redirect_to change_password_session_path({:email => email}) unless email.blank?
       end
     end
   end
@@ -94,8 +94,8 @@ class SessionsController < ApplicationController
   protected
   # Track failed login attempts
   def note_failed_signin
-    flash[:error] = "Couldn't log you in as '#{params[:login]}'"
-    logger.warn "Failed login for '#{params[:login]}' from #{request.remote_ip} at #{Time.now.utc}"
+    flash[:error] = "Couldn't log you in as '#{params[:email]}'"
+    logger.warn "Failed login for '#{params[:email]}' from #{request.remote_ip} at #{Time.now.utc}"
   end
 
   private

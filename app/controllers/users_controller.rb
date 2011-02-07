@@ -19,7 +19,7 @@ class UsersController < ApplicationController
     success = @user && @user.valid?
     if success && @user.errors.empty?
       @user.save
-      @user.activate!
+#      @user.activate!
       UserMailer.deliver_signup_notification(@user)
       redirect_back_or_default('/')
       flash[:notice] = "Thanks for signing up!  We're sending you an email with your activation code."

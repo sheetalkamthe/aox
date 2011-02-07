@@ -25,7 +25,7 @@ class User < ActiveRecord::Base
   attr_accessor :email_confirmation
 
   def email_confirms
-    errors.add('Email and Email confirmation') unless email == email_confirmation
+    errors.add('Email and Email confirmation') unless email == email_confirmation if new_record?
   end
   
   def name
@@ -39,8 +39,8 @@ class User < ActiveRecord::Base
   #
   def self.authenticate(email, password)
     return nil if email.blank? || password.blank?
-    u = find_in_state :first, :active, :conditions => {:email => email.downcase} # need to get the salt
-    u && u.authenticated?(password) ? u : nil
+    user = find_in_state :first, :active, :conditions => {:email => email.downcase} # need to get the salt
+    user && user.authenticated?(password) ? user : nil
   end
 
   def login=(value)
@@ -53,9 +53,17 @@ class User < ActiveRecord::Base
 
   protected
     
+  # *Description*
+  # * Creates Activation code with the combination of registration details and timestamp
+  # *Parameters*
+  # * None
+  # *Returns*
+  # * None
+  # *Errors*
+  # * None
   def make_activation_code
     self.deleted_at = nil
     self.activation_code = self.class.make_token
   end
-
+  
 end

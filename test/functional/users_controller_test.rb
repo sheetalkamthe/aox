@@ -18,14 +18,6 @@ class UsersControllerTest < ActionController::TestCase
     end
   end
 
-  def test_should_require_login_on_signup
-    assert_no_difference 'User.count' do
-      create_user(:login => nil)
-      assert assigns(:user).errors.on(:login)
-      assert_response :success
-    end
-  end
-
   def test_should_require_password_on_signup
     assert_no_difference 'User.count' do
       create_user(:password => nil)
@@ -49,14 +41,14 @@ class UsersControllerTest < ActionController::TestCase
       assert_response :success
     end
   end
-  
+
   def test_should_sign_up_user_in_pending_state
     create_user
     assigns(:user).reload
     assert assigns(:user).pending?
   end
 
-  
+
   def test_should_sign_up_user_with_activation_code
     create_user
     assigns(:user).reload
@@ -64,13 +56,13 @@ class UsersControllerTest < ActionController::TestCase
   end
 
   def test_should_activate_user
-    assert_nil User.authenticate('aaron', 'test')
-    get :activate, :activation_code => users(:aaron).activation_code
-    assert_redirected_to '/session/new'
+    assert_nil User.authenticate('roshan_devadiga@persistent.co.in', 'test')
+    get :activate, :activation_code => users(:user_2).activation_code
+    assert_redirected_to '/login'
     assert_not_nil flash[:notice]
-    assert_equal users(:aaron), User.authenticate('aaron', 'monkey')
+    assert_equal users(:user_2), User.authenticate('roshan_devadiga@persistent.co.in', 'monkey')
   end
-  
+
   def test_should_not_activate_user_without_key
     get :activate
     assert_nil flash[:notice]
@@ -87,7 +79,7 @@ class UsersControllerTest < ActionController::TestCase
 
   protected
     def create_user(options = {})
-      post :create, :user => { :login => 'quire', :email => 'quire@example.com',
-        :password => 'quire69', :password_confirmation => 'quire69' }.merge(options)
+      post :create, :user => { :email => 'raghavendra_shet@persistent.co.in',
+        :password => 'quire69', :password_confirmation => 'quire69',:email_confirmation => 'raghavendra_shet@persistent.co.in' , :first_name => "qyure", :last_name => "guire"}.merge(options)
     end
 end

@@ -9,7 +9,7 @@
     <%= stylesheet_link_tag 'styles.css' %>
   </head>
   <body>
-    <%= flash[:notice] %>
+    <%= display_flash_messages if current_user %>
     <div id="container">
       <div id="header">
         <% if true#current_user   %>

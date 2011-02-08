@@ -26,13 +26,6 @@ class UserTest < ActiveSupport::TestCase
   end
 
 
-  def test_should_require_login
-    assert_no_difference 'User.count' do
-      u = create_user(:login => nil)
-      assert u.errors.on(:login)
-    end
-  end
-
   def test_should_require_password
     assert_no_difference 'User.count' do
       u = create_user(:password => nil)
@@ -55,56 +48,56 @@ class UserTest < ActiveSupport::TestCase
   end
 
   def test_should_reset_password
-    users(:quentin).update_attributes(:password => 'new password', :password_confirmation => 'new password')
-    assert_equal users(:quentin), User.authenticate('quentin', 'new password')
+    users(:user_1).update_attributes(:password => 'new password', :password_confirmation => 'new password')
+    assert_equal users(:user_1), User.authenticate('sheetal_kamthe@persistent.co.in', 'new password')
   end
 
   def test_should_not_rehash_password
-    users(:quentin).update_attributes(:login => 'quentin2')
-    assert_equal users(:quentin), User.authenticate('quentin2', 'monkey')
+    users(:user_1).update_attributes(:email => 'sheetal_kamthe1@persistent.co.in')
+    assert_equal users(:user_1), User.authenticate('sheetal_kamthe1@persistent.co.in', 'monkey')
   end
 
   def test_should_authenticate_user
-    assert_equal users(:quentin), User.authenticate('quentin', 'monkey')
+    assert_equal users(:user_1), User.authenticate('sheetal_kamthe@persistent.co.in', 'monkey')
   end
 
   def test_should_set_remember_token
-    users(:quentin).remember_me
-    assert_not_nil users(:quentin).remember_token
-    assert_not_nil users(:quentin).remember_token_expires_at
+    users(:user_1).remember_me
+    assert_not_nil users(:user_1).remember_token
+    assert_not_nil users(:user_1).remember_token_expires_at
   end
 
   def test_should_unset_remember_token
-    users(:quentin).remember_me
-    assert_not_nil users(:quentin).remember_token
-    users(:quentin).forget_me
-    assert_nil users(:quentin).remember_token
+    users(:user_1).remember_me
+    assert_not_nil users(:user_1).remember_token
+    users(:user_1).forget_me
+    assert_nil users(:user_1).remember_token
   end
 
   def test_should_remember_me_for_one_week
     before = 1.week.from_now.utc
-    users(:quentin).remember_me_for 1.week
+    users(:user_1).remember_me_for 1.week
     after = 1.week.from_now.utc
-    assert_not_nil users(:quentin).remember_token
-    assert_not_nil users(:quentin).remember_token_expires_at
-    assert users(:quentin).remember_token_expires_at.between?(before, after)
+    assert_not_nil users(:user_1).remember_token
+    assert_not_nil users(:user_1).remember_token_expires_at
+    assert users(:user_1).remember_token_expires_at.between?(before, after)
   end
 
   def test_should_remember_me_until_one_week
     time = 1.week.from_now.utc
-    users(:quentin).remember_me_until time
-    assert_not_nil users(:quentin).remember_token
-    assert_not_nil users(:quentin).remember_token_expires_at
-    assert_equal users(:quentin).remember_token_expires_at, time
+    users(:user_1).remember_me_until time
+    assert_not_nil users(:user_1).remember_token
+    assert_not_nil users(:user_1).remember_token_expires_at
+    assert_equal users(:user_1).remember_token_expires_at, time
   end
 
   def test_should_remember_me_default_two_weeks
     before = 2.weeks.from_now.utc
-    users(:quentin).remember_me
+    users(:user_1).remember_me
     after = 2.weeks.from_now.utc
-    assert_not_nil users(:quentin).remember_token
-    assert_not_nil users(:quentin).remember_token_expires_at
-    assert users(:quentin).remember_token_expires_at.between?(before, after)
+    assert_not_nil users(:user_1).remember_token
+    assert_not_nil users(:user_1).remember_token_expires_at
+    assert users(:user_1).remember_token_expires_at.between?(before, after)
   end
 
   def test_should_register_passive_user
@@ -116,48 +109,48 @@ class UserTest < ActiveSupport::TestCase
   end
 
   def test_should_suspend_user
-    users(:quentin).suspend!
-    assert users(:quentin).suspended?
+    users(:user_1).suspend!
+    assert users(:user_1).suspended?
   end
 
   def test_suspended_user_should_not_authenticate
-    users(:quentin).suspend!
-    assert_not_equal users(:quentin), User.authenticate('quentin', 'test')
+    users(:user_1).suspend!
+    assert_not_equal users(:user_1), User.authenticate('sheetal_kamthe@persistent.co.in', 'test')
   end
 
   def test_should_unsuspend_user_to_active_state
-    users(:quentin).suspend!
-    assert users(:quentin).suspended?
-    users(:quentin).unsuspend!
-    assert users(:quentin).active?
+    users(:user_1).suspend!
+    assert users(:user_1).suspended?
+    users(:user_1).unsuspend!
+    assert users(:user_1).active?
   end
 
   def test_should_unsuspend_user_with_nil_activation_code_and_activated_at_to_passive_state
-    users(:quentin).suspend!
+    users(:user_1).suspend!
     User.update_all :activation_code => nil, :activated_at => nil
-    assert users(:quentin).suspended?
-    users(:quentin).reload.unsuspend!
-    assert users(:quentin).passive?
+    assert users(:user_1).suspended?
+    users(:user_1).reload.unsuspend!
+    assert users(:user_1).passive?
   end
 
   def test_should_unsuspend_user_with_activation_code_and_nil_activated_at_to_pending_state
-    users(:quentin).suspend!
+    users(:user_1).suspend!
     User.update_all :activation_code => 'foo-bar', :activated_at => nil
-    assert users(:quentin).suspended?
-    users(:quentin).reload.unsuspend!
-    assert users(:quentin).pending?
+    assert users(:user_1).suspended?
+    users(:user_1).reload.unsuspend!
+    assert users(:user_1).pending?
   end
 
   def test_should_delete_user
-    assert_nil users(:quentin).deleted_at
-    users(:quentin).delete!
-    assert_not_nil users(:quentin).deleted_at
-    assert users(:quentin).deleted?
+    assert_nil users(:user_1).deleted_at
+    users(:user_1).delete!
+    assert_not_nil users(:user_1).deleted_at
+    assert users(:user_1).deleted?
   end
 
 protected
   def create_user(options = {})
-    record = User.new({ :login => 'quire', :email => 'quire@example.com', :password => 'quire69', :password_confirmation => 'quire69' }.merge(options))
+    record = User.new({  :email => 'quire@example.com', :password => 'quire69',:password_confirmation => 'quire69',:email_confirmation => 'quire@example.com', :first_name => "qyure", :last_name => "guire" }.merge(options))
     record.register! if record.valid?
     record
   end
